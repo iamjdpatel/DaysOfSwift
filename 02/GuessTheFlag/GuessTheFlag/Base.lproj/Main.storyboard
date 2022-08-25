@@ -18,6 +18,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBQ-qV-ADy">
                                 <rect key="frame" x="95" y="100" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wBQ-qV-ADy" secondAttribute="height" multiplier="112:57" id="iNu-9o-GjV"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -26,6 +29,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEN-A7-Ldh">
                                 <rect key="frame" x="95" y="244" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UEN-A7-Ldh" secondAttribute="height" multiplier="112:57" id="kgD-rT-sCN"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -34,6 +40,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P4-Oc-tUI">
                                 <rect key="frame" x="95" y="388" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8P4-Oc-tUI" secondAttribute="height" multiplier="112:57" id="4ZO-au-hNk"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -47,8 +56,11 @@
                             <constraint firstItem="8P4-Oc-tUI" firstAttribute="centerX" secondItem="UEN-A7-Ldh" secondAttribute="centerX" id="3iN-kn-APX"/>
                             <constraint firstItem="UEN-A7-Ldh" firstAttribute="centerX" secondItem="wBQ-qV-ADy" secondAttribute="centerX" id="Gtx-1p-4vx"/>
                             <constraint firstItem="8P4-Oc-tUI" firstAttribute="top" secondItem="UEN-A7-Ldh" secondAttribute="bottom" constant="30" id="H9n-wE-qy1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8P4-Oc-tUI" secondAttribute="bottom" constant="20" id="HTF-dD-vB5"/>
+                            <constraint firstItem="8P4-Oc-tUI" firstAttribute="height" secondItem="UEN-A7-Ldh" secondAttribute="height" id="KJr-qY-YiK"/>
                             <constraint firstItem="wBQ-qV-ADy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="jhb-C8-QQm"/>
                             <constraint firstItem="UEN-A7-Ldh" firstAttribute="top" secondItem="wBQ-qV-ADy" secondAttribute="bottom" constant="30" id="mMU-hu-60h"/>
+                            <constraint firstItem="UEN-A7-Ldh" firstAttribute="height" secondItem="wBQ-qV-ADy" secondAttribute="height" id="wtf-fd-F7y"/>
                             <constraint firstItem="wBQ-qV-ADy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xe8-cg-o4S"/>
                         </constraints>
                     </view>
