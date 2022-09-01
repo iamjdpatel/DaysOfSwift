@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KTC-qm-wjZ">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,16 +13,43 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Multibrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQA-kF-EMS">
+                                <rect key="frame" x="5" y="49" width="414" height="682"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0om-zK-iyf"/>
+                                </connections>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bL9-tP-GIk">
+                                <rect key="frame" x="0.0" y="49" width="414" height="687"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bL9-tP-GIk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="2bY-g6-6Pd"/>
+                            <constraint firstItem="bQA-kF-EMS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="FPV-oR-0GH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bL9-tP-GIk" secondAttribute="bottom" id="Kef-XQ-kMU"/>
+                            <constraint firstItem="bL9-tP-GIk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MA8-Ae-aHS"/>
+                            <constraint firstItem="bQA-kF-EMS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="5" id="UPG-Gu-glC"/>
+                            <constraint firstItem="bQA-kF-EMS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="YRS-hj-8as"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bQA-kF-EMS" secondAttribute="bottom" constant="5" id="hqO-dN-5bb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bL9-tP-GIk" secondAttribute="trailing" id="uJN-nn-ROb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="E2Q-WJ-66O"/>
+                    <connections>
+                        <outlet property="addressBar" destination="bQA-kF-EMS" id="k56-vM-Rle"/>
+                        <outlet property="stackView" destination="bL9-tP-GIk" id="YCg-wQ-0nR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971.01449275362324" y="83.705357142857139"/>
+            <point key="canvasLocation" x="676.81159420289862" y="83.705357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vqg-cK-fjW">
@@ -30,7 +57,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KTC-qm-wjZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CXw-s6-a9X">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
