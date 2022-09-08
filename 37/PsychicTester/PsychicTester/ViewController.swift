@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WCSessionDelegate {
 
     @IBOutlet var gradientView: GradientView!
     @IBOutlet var cardContainer: UIView!
     var allCards = [CardViewController]()
+    var lastMessage: CFAbsoluteTime = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,21 @@ class ViewController: UIViewController {
         })
         
         createParticles()
+        
+        if (WCSession.isSupported()) {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        let instructions = "Please ensure your Apple Watch is configured correctly. On your iPhone, launch Apple's 'Watch' configuration app then choose General > Wake Screen. On that screen, please disable Wake Screen On Wrist Raise, then select Wake For 70 Seconds. On your Apple Watch, please swipe up on your watch face and enable Silent Mode. You're done!"
+        let ac = UIAlertController(title: "Adjust your settings", message: instructions, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "I'm Ready", style: .default))
+        present(ac, animated: true)
     }
     
     @objc func loadCards() {
@@ -124,9 +141,36 @@ class ViewController: UIViewController {
                         card.isCorrect = true
                     }
                 }
+                if card.isCorrect {
+                    sendWatchMessage()
+                }
             }
         }
     }
     
+    func sendWatchMessage() {
+        let currentTime = CFAbsoluteTimeGetCurrent()
+        if lastMessage + 0.5 > currentTime {
+            return
+        }
+
+        if (WCSession.default.isReachable) {
+            let message = ["Message": "Hello"]
+            WCSession.default.sendMessage(message, replyHandler: nil)
+        }
+        lastMessage = CFAbsoluteTimeGetCurrent()
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+
+    }
+
+    func sessionDidBecomeInactive(_ session: WCSession) {
+
+    }
+
+    func sessionDidDeactivate(_ session: WCSession) {
+
+    }
 }
 

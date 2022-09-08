@@ -492,6 +492,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PsychicTester WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "PsychicTester WatchKit Extension";
@@ -522,6 +523,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PsychicTester WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "PsychicTester WatchKit Extension";
@@ -555,6 +557,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = PsychicTester_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "PsychicTester WatchKit App";
@@ -580,6 +583,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = PsychicTester_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "PsychicTester WatchKit App";
@@ -605,6 +609,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PsychicTester/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -635,6 +640,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PsychicTester/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
