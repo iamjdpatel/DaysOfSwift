@@ -16,8 +16,10 @@
 		F11F3CAC28C9DBB900FAAD83 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F3CAB28C9DBB900FAAD83 /* SwiftyJSON.swift */; };
 		F11F3CAE28C9DC8100FAAD83 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F3CAD28C9DC8100FAAD83 /* DetailViewController.swift */; };
 		F11F3CB128C9DCF600FAAD83 /* GitHubCommits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F11F3CAF28C9DCF600FAAD83 /* GitHubCommits.xcdatamodeld */; };
-		F11F3CB428C9E0BF00FAAD83 /* Commit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F3CB228C9E0BF00FAAD83 /* Commit+CoreDataClass.swift */; };
-		F11F3CB528C9E0BF00FAAD83 /* Commit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F3CB328C9E0BF00FAAD83 /* Commit+CoreDataProperties.swift */; };
+		F196782428CB8F0C006CED35 /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F196782028CB8F0C006CED35 /* Author+CoreDataClass.swift */; };
+		F196782528CB8F0C006CED35 /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F196782128CB8F0C006CED35 /* Author+CoreDataProperties.swift */; };
+		F196782628CB8F0C006CED35 /* Commit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F196782228CB8F0C006CED35 /* Commit+CoreDataClass.swift */; };
+		F196782728CB8F0C006CED35 /* Commit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F196782328CB8F0C006CED35 /* Commit+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +34,10 @@
 		F11F3CAB28C9DBB900FAAD83 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		F11F3CAD28C9DC8100FAAD83 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F11F3CB028C9DCF600FAAD83 /* GitHubCommits.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubCommits.xcdatamodel; sourceTree = "<group>"; };
-		F11F3CB228C9E0BF00FAAD83 /* Commit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		F11F3CB328C9E0BF00FAAD83 /* Commit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		F196782028CB8F0C006CED35 /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		F196782128CB8F0C006CED35 /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		F196782228CB8F0C006CED35 /* Commit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		F196782328CB8F0C006CED35 /* Commit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +70,10 @@
 		F11F3C9628C9DBAF00FAAD83 /* GitHubCommits */ = {
 			isa = PBXGroup;
 			children = (
-				F11F3CB228C9E0BF00FAAD83 /* Commit+CoreDataClass.swift */,
-				F11F3CB328C9E0BF00FAAD83 /* Commit+CoreDataProperties.swift */,
+				F196782028CB8F0C006CED35 /* Author+CoreDataClass.swift */,
+				F196782128CB8F0C006CED35 /* Author+CoreDataProperties.swift */,
+				F196782228CB8F0C006CED35 /* Commit+CoreDataClass.swift */,
+				F196782328CB8F0C006CED35 /* Commit+CoreDataProperties.swift */,
 				F11F3CAB28C9DBB900FAAD83 /* SwiftyJSON.swift */,
 				F11F3C9728C9DBAF00FAAD83 /* AppDelegate.swift */,
 				F11F3C9928C9DBAF00FAAD83 /* SceneDelegate.swift */,
@@ -153,13 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F196782728CB8F0C006CED35 /* Commit+CoreDataProperties.swift in Sources */,
+				F196782528CB8F0C006CED35 /* Author+CoreDataProperties.swift in Sources */,
 				F11F3C9C28C9DBAF00FAAD83 /* ViewController.swift in Sources */,
-				F11F3CB428C9E0BF00FAAD83 /* Commit+CoreDataClass.swift in Sources */,
 				F11F3CB128C9DCF600FAAD83 /* GitHubCommits.xcdatamodeld in Sources */,
 				F11F3C9828C9DBAF00FAAD83 /* AppDelegate.swift in Sources */,
 				F11F3CAE28C9DC8100FAAD83 /* DetailViewController.swift in Sources */,
+				F196782428CB8F0C006CED35 /* Author+CoreDataClass.swift in Sources */,
+				F196782628CB8F0C006CED35 /* Commit+CoreDataClass.swift in Sources */,
 				F11F3C9A28C9DBAF00FAAD83 /* SceneDelegate.swift in Sources */,
-				F11F3CB528C9E0BF00FAAD83 /* Commit+CoreDataProperties.swift in Sources */,
 				F11F3CAC28C9DBB900FAAD83 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
