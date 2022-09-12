@@ -8,7 +8,12 @@
 import XCTest
 
 class TestingUITests: XCTestCase {
-
+    
+    override class func setUp() {
+        super.setUp()
+        XCUIApplication().launch()
+    }
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
@@ -22,14 +27,6 @@ class TestingUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
@@ -37,5 +34,23 @@ class TestingUITests: XCTestCase {
                 XCUIApplication().launch()
             }
         }
+    }
+    
+    func testInitialStateIsCorrect() {
+        let table = XCUIApplication().tables
+        XCTAssertEqual(table.cells.count, 7, "There should be 7 rows initially")
+    }
+    
+    func testUserFilteringByString() {
+        let app = XCUIApplication()
+        app.buttons["Search"].tap()
+        
+        let filterAlert = app.alerts
+        let textField = filterAlert.textFields.element
+        textField.typeText("test")
+        
+        filterAlert.buttons["Filter"].tap()
+        
+        XCTAssertEqual(app.tables.cells.count, 56, "There should be 56 words matching 'test'")
     }
 }
